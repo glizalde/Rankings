@@ -9,10 +9,20 @@ class UnitsSeeder extends Seeder
 {
     public function run(): void
     {
-        $names = ['Azcapotzalco','Cuajimalpa','Iztapalapa','Lerma','Xochimilco'];
+        $names = [
+            'Azcapotzalco',
+            'Cuajimalpa',
+            'Iztapalapa',
+            'Lerma',
+            'Xochimilco',
+            'Rectoría General' //
+        ];
 
         foreach ($names as $name) {
-            DB::table('units')->updateOrInsert(['name' => $name], ['name' => $name]);
+            DB::table('units')->updateOrInsert(
+                ['name' => $name],
+                ['name' => $name]
+            );
         }
     }
 }
