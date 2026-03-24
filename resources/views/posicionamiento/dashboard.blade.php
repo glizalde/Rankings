@@ -8,7 +8,7 @@
         <div class="card shadow-sm mb-3">
             <div class="card-body">
                 <h5 class="card-title">Bienvenido</h5>
-                <p><strong>Número económico:</strong> {{ $user->numero_economico }}</p>
+                <p><strong>Nombre:</strong> {{ $user->name }}</p>
                 <p><strong>Correo:</strong> {{ $user->correo }}</p>
                 <p><strong>Unidad:</strong> {{ $user->unidad }}</p>
             </div>

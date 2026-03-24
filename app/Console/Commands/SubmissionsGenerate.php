@@ -71,4 +71,4 @@ class SubmissionsGenerate extends Command
         $this->info("Submissions creadas: {$created} (año={$year}, ranking={$rankingId}, etapa={$stageId})");
         return self::SUCCESS;
     }
-}
+}   
